@@ -1,0 +1,14 @@
+{
+  "name": "demo-bootstrap4",
+  "version": "1.0.0",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "v4.0.0-alpha.6",
+    "animate.css": "^3.5.2"
+  },
+  "devDependencies": {}
+}
