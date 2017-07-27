@@ -20,48 +20,50 @@
     <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type="text/css"/>
     <!--font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
-    <!-- style.css CSS -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    <!-- slick CSS -->
+    <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="bower_components/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css"/>
+    <!-- style CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>    
     
   </head>
   <body>
       
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-faded nav-custom pt-0 pb-0">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-faded nav-custom">
             <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>            
             <a class="navbar-brand" href="javascript:void(0);">
-                <img src="img/logo.png" alt="">
+                <img src="img/logo.png" alt="" style="visibility: hidden;">
             </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active text-center">
+                    <li class="nav-item active">
                       <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       <a class="nav-link dropdown-toggle mr-2" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Categorias
                        </a>
                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                         <a class="dropdown-item" href="#">Action</a>
-                         <a class="dropdown-item" href="#">Another action</a>
-                         <a class="dropdown-item" href="#">Something else here</a>
+                         <a class="dropdown-item" href="#">Categoria 1</a>
+                         <a class="dropdown-item" href="#">Categoria 2</a>
                        </div>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline">
                   <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
                   <button class="btn btn-info my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </form>                
             </div>            
         </nav>       
       
-    <div class="container-fluid">       
+    <div class="container-fluid" >       
         
         <div class="row">
             <div class="col-md-3">
                 
-                <div class="card-shadow mt-4">
+                <div class="card-2 mt-4">
                     <div class="card" >
                       <img class="card-img-top img-fluid mx-auto d-block rounded-circle profile mt-4" src="img/profile-512.jpeg" >
                       <div class="card-block">
@@ -71,14 +73,18 @@
                     </div>                    
                 </div>
                 
-                <div class="card-shadow mt-4">
+                <div class="card-2 mt-4">
                     <div class="card" >
                       <div class="card-block">
                         <h4 class="card-title">Acerca de mí</h4>
                         <ul class="about pl-0" >                            
                             <li>Santiago de Chile <i class="fa fa-map-marker" aria-hidden="true"></i></li>
                             <li>Love <i class="fa fa-gamepad"></i></li>
-                            <li>"think twice code once"</li>
+                            <li>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0 p-0 green">"think twice code once"</p>
+                                </blockquote>
+                            </li>
                         </ul>
                         <a href="https://www.linkedin.com/in/merinho/" target="_blank" class="btn btn-primary"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         <a href="https://github.com/plagu33" target="_blank" class="btn btn-secondary"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -89,40 +95,80 @@
                 
             </div>
             <div class="col-md-6">
-                <div class="card-shadow mt-4">
+                <div class="card-2 mt-4">
                     <div class="card rounded-0" >
-                        <div class="card-header">
+                        <div class="card-header title-post">
                            Últimos Post
                         </div>
                         <!--img class="card-img-top img-fluid mx-auto d-block" src="img/01.jpeg" -->
                       <div class="card-block">
                         <h4 class="card-title">Post</h4>
                         <p class="card-text text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet elit pulvinar elit mattis gravida eget id neque. Donec luctus luctus urna, nec molestie sem lacinia in. Maecenas in diam ac dolor hendrerit vulputate. Nullam sed velit consectetur, pretium purus a, volutpat arcu. Curabitur id vehicula lectus, nec tempus ipsum. Ut ac erat in neque viverra fermentum. Curabitur vel lacinia lorem. Donec lacinia odio nec tellus imperdiet posuere. Sed nec magna ut odio condimentum fringilla. Vivamus congue quam ac metus feugiat, eget suscipit orci rutrum. 
-                        </p>                        
-                      </div>
-                    </div>                        
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet elit pulvinar elit mattis gravida eget id neque. Donec luctus luctus urna, nec molestie sem lacinia in. Maecenas in diam ac dolor hendrerit vulputate. Nullam sed velit consectetur, pretium purus a, volutpat arcu. Curabitur id vehicula lectus.
+                        </p> 
+                        <a href="#" class="btn btn-outline-primary float-right">Ver más</a>
+                      </div>                       
+                    </div> 
+
+                    <div class="card rounded-0">
+                      <div class="card-block">
+                        <h4 class="card-title">Post</h4>
+                        <p class="card-text text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet elit pulvinar elit mattis gravida eget id neque. Donec luctus luctus urna, nec molestie sem lacinia in.
+                        </p>
+                        <a href="#" class="btn btn-outline-primary float-right">Ver más</a>                        
+                      </div>                       
+                    </div>
+
+                    <div class="card rounded-0">
+                      <div class="card-block">
+                        <h4 class="card-title">Post</h4>
+                        <p class="card-text text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet elit pulvinar elit mattis gravida eget id neque. Donec luctus luctus urna, nec molestie sem lacinia in.
+                        </p> 
+                        <a href="#" class="btn btn-outline-primary float-right">Ver más</a>
+                      </div>                       
+                    </div>  
+                    
                 </div>                          
             </div>
             <div class="col-md-3">
-                <!--div class="card-shadow mt-4">
-                    
-                    <div class="card rounded-0" > 
-                        <img class="card-img-top img-fluid mx-auto d-block mt-4" src="img/minimi.jpg" >
-                      <div class="card-block">
-                        <h4 class="card-title"></h4>
-                        <p class="card-text text-justify"></p>                        
-                      </div>
-                    </div>                        
-                    
-                </div--> 
-                <div class="card-shadow mt-4">
+                <div class="card-2 mt-4">
+                    <div class="slick-mini">
+                        <!--div>
+                            <div class="card rounded-0" > 
+                                <img class="card-img-top img-fluid mx-auto d-block mt-4" src="img/minimi.jpg" >
+                              <div class="card-block">
+                                <h4 class="card-title"></h4>
+                                <p class="card-text text-justify"></p>                        
+                              </div>
+                            </div>                              
+                        </div-->                                                  
+                        <div class="card rounded-0 pb-3">
+                          <div class="card-block">
+                            <h4 class="card-title">Post</h4>
+                            <p class="card-text text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet elit pulvinar elit mattis gravida eget id neque. Donec luctus luctus urna, nec molestie sem lacinia in.
+                            </p>                        
+                          </div>                       
+                        </div>
+                        <div class="card rounded-0 pb-3">
+                          <div class="card-block">
+                            <h4 class="card-title">Post</h4>
+                            <p class="card-text text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sit amet elit pulvinar elit mattis gravida eget id neque. Donec luctus luctus urna, nec molestie sem lacinia in.
+                            </p>                        
+                          </div>                       
+                        </div>
+                    </div>
+                </div>                   
+                <div class="card-2 mt-4">
                     <a class="twitter-timeline"
                       href="https://twitter.com/manuelzero3"
                       data-chrome="nofooter noborders" 
                       data-tweet-limit="1" >
                     </a>                    
-                </div>
+                </div>              
             </div>
         </div>
         <div class="row">
@@ -138,37 +184,21 @@
         </div>
     </div>
       
-    <div class="footer pt-3 pb-3 mt-3">
+    <footer class="footer pt-2 pb-2 mt-4">
       <div class="container">
-              <a href='#'><i class="fa fa-github fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-facebook fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-twitter fa-3x fa-fw"></i></a>
-              <a href='#'><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
+              <a href='https://github.com/plagu33' target="_blank"><i class="fa fa-github fa-3x fa-fw"></i></a>              
+              <a href='https://twitter.com/manuelzero3' target="_blank"><i class="fa fa-twitter fa-3x fa-fw"></i></a>
+              <a href='https://www.linkedin.com/in/merinho/' target="_blank"><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
             </span>
       </div>
-    </div>       
+    </footer>       
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="bower_components/tether/dist/js/tether.min.js" type="text/javascript"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <script>window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "//platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-
-      return t;
-    }(document, "script", "twitter-wjs"));</script>    
+    <script src="bower_components/slick-carousel/slick/slick.min.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
     
   </body>
 </html>

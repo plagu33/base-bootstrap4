@@ -2,13 +2,20 @@
     Created on : 25-jul-2017, 16:42:53
     Author     : Plagu33
 */
+html {
+  font-size: 16px; }
+
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.6;
   color: #292b2c;
-  background-color: #f5f8fa; }
+  background-color: #f5f8fa;
+  position: relative; }
+
+.green {
+  color: green; }
 
 .btn-facebook, .btn-twitter {
   color: #fff !important; }
@@ -16,31 +23,47 @@ body {
 .about {
   list-style: none; }
 
-.no-radius {
-  border-radius: 0px; }
-
 .nav-custom {
-  background-color: #3097D1;
+  background-color: #003c8f;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23); }
 
-.card-shadow {
+.title-post {
+  background-color: #1565c0;
+  color: #fff; }
+
+.card-shadow, .card-1, .card-2 {
   background: #fff;
   border-radius: 2px;
   position: relative;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
-  /*>:hover {
+  /*&:hover {
       box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
       transition: all 0.3s cubic-bezier(.20,.5,.20,1);
   }*/ }
-  .card-shadow .profile {
-    width: 50%; }
+
+.card-1 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.slick-mini .slick-prev {
+  left: 5px !important;
+  z-index: 9 !important; }
+.slick-mini .slick-next {
+  right: 5px;
+  z-index: 9; }
+.slick-mini .slick-dots {
+  bottom: 8px; }
+
+.profile {
+  width: 50%; }
 
 .footer {
-  bottom: 0;
-  width: 100%;
+  position: relative;
   background-color: #102e40;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .footer .container {
     color: #fff;
     width: 100%; }
@@ -48,16 +71,6 @@ body {
     color: #4099FF; }
   .footer .fa-facebook {
     color: #3B5998; }
-  .footer .fa-youtube-play {
-    color: #e52d27; }
-  .footer .fa-rss {
-    color: #FF6600; }
-  .footer .fa-vine {
-    color: #00a478; }
-  .footer .fa-flickr {
-    color: #ff0084; }
-  .footer .fa-twitch {
-    color: #6441A5; }
   .footer .fa-linkedin {
     color: #007bb6; }
   .footer .fa {
@@ -68,5 +81,21 @@ body {
       opacity: 1;
       transition: 1s;
       -webkit-transition: 1s; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 14px; } }
+@media (min-width: 992px) {
+  html {
+    font-size: 15px; } }
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px; } }
+@media (min-width: 1440px) {
+  html {
+    font-size: 17px; } }
+@media (min-width: 2560px) {
+  html {
+    font-size: 28px; } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,8 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "bootstrap": "v4.0.0-alpha.6",
-    "animate.css": "^3.5.2"
+    "animate.css": "^3.5.2",
+    "slick-carousel": "^1.7.0"
   },
   "devDependencies": {}
 }
